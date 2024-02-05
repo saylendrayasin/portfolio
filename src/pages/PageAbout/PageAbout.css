@@ -87,7 +87,7 @@
 }
 
 .ad__content {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   gap: 1rem;
 }

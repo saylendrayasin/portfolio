@@ -15,18 +15,20 @@ export const routerList = [
   {
     path: ROUTES.HOME,
     element: <PageHome />,
-  },
-  {
-    path: ROUTES.ABOUT,
-    element: <PageAbout />,
-  },
-  {
-    path: ROUTES.PORTOFLIO,
-    element: <PagePortofolio />,
-  },
-  {
-    path: ROUTES.CONTACT,
-    element: <PageContact />,
+    children: [
+      {
+        path: ROUTES.ABOUT,
+        element: <PageAbout />,
+      },
+      {
+        path: ROUTES.PORTOFLIO,
+        element: <PagePortofolio />,
+      },
+      {
+        path: ROUTES.CONTACT,
+        element: <PageContact />,
+      },
+    ],
   },
 ];
 
