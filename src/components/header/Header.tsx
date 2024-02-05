@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
@@ -8,23 +9,23 @@ export default function Header({ active }: { active: string }) {
   return (
     <div className="header">
       <div className="header__logo">
-        <a href="/">
+        <Link to="/">
           <img className="hl__img" src={header} alt="logo" />
-        </a>
+        </Link>
       </div>
       <div className="header__menu">
         <ul className="list">
           <li className={active === 'home' ? 'active' : ''}>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className={active === 'about' ? 'active' : ''}>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li className={active === 'portfolio' ? 'active' : ''}>
-            <a href="/portfolio">Portfolio</a>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li className={active === 'contact' ? 'active' : ''}>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>|</li>
           <li>
