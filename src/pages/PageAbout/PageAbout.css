@@ -86,22 +86,9 @@
   /* height: 400px; */
 }
 
-.ad__content {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 1rem !important;
-}
-
 .ad__content--wrapper {
   display: flex;
   flex-direction: column;
-  width: 50%;
-}
-
-.adc__title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin: 1rem 0;
 }
 
 .adc__desc {
@@ -109,9 +96,4 @@
   font-weight: 400;
   margin: 0;
   text-align: justify;
-}
-.adc__content {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
 }
